@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu-icon">
+            <i class="fa-solid fa-angles-left"></i>
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+        
+        <h1>Music player</h1>
+        <img src="thumb.jpg" id="thumb-img">
+        <h4><span>Song:</span> Dunia sundor manus sundor</h4>
+        <h6><span>Artist:</span> Unknown</h6>
+        <audio id="song" src="Janina_Koto_Sundor_Tumi_Allah-ALQURANS.COM.mp3"></audio>
+        <input type="range" id="progress-bar">
+        <div class="control-icon">
+            <button><i class="fa-solid fa-backward-step"></i></button>
+            <button><i class="fa-solid fa-backward"></i></button>
+            <button  id="play-pouse" onclick="playPouse()"><i class="fa-solid fa-play" id="play-pause-icon"></i></button>
+            <button><i class="fa-solid fa-forward"></i></button>
+            <button><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="control-icon">
+            <button id="silent-btn"><i class="fa-solid fa-volume-xmark" id="silent-icon"></i></button>
+            <button><i class="fa-solid fa-volume-low" id="volume-low"></i></button>
+            <button><i class="fa-solid fa-volume-high" id="volume-high"></i></button>
+
+
+        </div>
+        <p id="show-volume"></p>
+    </div>
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
